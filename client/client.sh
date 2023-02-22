@@ -28,6 +28,7 @@ echo $file_data_with_signature > file_B
 #cat file_B
 
 #test case 3: file contents were alterted on new line after signing
+#echo "alteration" > file_B
 
 # send the file data with signature to the Restful API service for verification
 curl -X POST -H "Content-Type: application/octet-stream" --data-binary "@file_B" http://localhost:3000/verify
